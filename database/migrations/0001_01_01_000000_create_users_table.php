@@ -12,15 +12,15 @@ return new class extends Migration
             $table->id();
             $table->string('user_id', 8)->unique();
             $table->string('first_name');
-            $table->string('middle_name')->nullable(); 
-            $table->string('last_name'); 
+            $table->string('middle_name')->nullable();
+            $table->string('last_name');
             $table->string('email')->unique();
             $table->string('program');
             $table->string('year_section');
             $table->string('department');
             $table->string('password');
-            $table->enum('role', ['admin', 'accounting', 'cads', 'student'])->default('student');
-            $table->string('profile_picture')->nullable(); 
+            $table->enum('role', ['admin', 'accounting', 'cads', 'student', 'dean'])->default('student');
+            $table->string('profile_picture')->nullable();
             $table->timestamps();
         });
     }

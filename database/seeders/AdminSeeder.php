@@ -13,16 +13,16 @@ class AdminSeeder extends Seeder
     {
         // admin (edp) account
         User::create([
-            'user_id' => 'EDP0001',  
+            'user_id' => 'EDP0001',
             'first_name' => 'EDP Admin',
-            'middle_name' => '',  
-            'last_name' => '',    
-            'program' => '', 
-            'year_section' => '', 
+            'middle_name' => '',
+            'last_name' => '',
+            'program' => '',
+            'year_section' => '',
             'department' => '',
             'email' => 'edp_admin@gmail.com',
-            'password' => Hash::make('admin1234'), 
-            'role' => 'admin', 
+            'password' => Hash::make('admin1234'),
+            'role' => 'admin',
             'profile_picture' => '',
         ]);
 
@@ -30,10 +30,10 @@ class AdminSeeder extends Seeder
         User::create([
             'user_id' => 'ACC0001',
             'first_name' => 'Accounting Admin',
-            'middle_name' => '',  
-            'last_name' => '',   
-            'program' => '', 
-            'year_section' => '', 
+            'middle_name' => '',
+            'last_name' => '',
+            'program' => '',
+            'year_section' => '',
             'department' => '',
             'email' => 'accounting_admin@gmail.com',
             'password' => Hash::make('account1234'),
@@ -45,30 +45,47 @@ class AdminSeeder extends Seeder
         User::create([
             'user_id' => 'CAD0001',
             'first_name' => 'CADS Admin',
-            'middle_name' => '',  
-            'last_name' => '',    
-            'program' => '', 
-            'year_section' => '', 
+            'middle_name' => '',
+            'last_name' => '',
+            'program' => '',
+            'year_section' => '',
             'department' => '',
             'email' => 'cads_admin@gmail.com',
             'password' => Hash::make('cads1234'),
-            'role' => 'cads', 
+            'role' => 'cads',
             'profile_picture' => '',
         ]);
-        
+
         //student account
         User::create([
             'user_id' => 'STU0001',
             'first_name' => 'Example',
-            'middle_name' => '',  
-            'last_name' => '',    
-            'program' => '', 
-            'year_section' => '', 
+            'middle_name' => '',
+            'last_name' => '',
+            'program' => '',
+            'year_section' => '',
             'department' => '',
             'email' => 'jcdiocampo23@gmail.com',
             'password' => Hash::make('student1234'),
-            'role' => 'student', 
+            'role' => 'student',
             'profile_picture' => '',
         ]);
+
+        //Dean
+
+        User::create([
+            'user_id' => 'DCCS001',
+            'first_name' => 'Kezekiah',
+            'middle_name' => 'Ruben',
+            'last_name' => 'Yatong',
+            'program' => '',
+            'year_section' => '',
+            'department' => '',
+            'email' => 'kezekiahY@gmail.com',
+            'password' => Hash::make('dean1234'),
+            'role' => 'Dean',
+            'profile_picture' => '',
+        ]);
+
     }
 }
